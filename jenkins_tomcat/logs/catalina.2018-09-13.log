@@ -1,0 +1,396 @@
+九月 13, 2018 5:25:42 下午 org.apache.catalina.startup.Catalina initDirs
+严重: Cannot find specified temporary folder at /Users/ailikes/working/docker_workspace/docker_jenkins/jenkins_tomcat/temp
+九月 13, 2018 5:25:42 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.88
+九月 13, 2018 5:25:42 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          May 7 2018 11:12:57 UTC
+九月 13, 2018 5:25:42 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.88.0
+九月 13, 2018 5:25:42 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Mac OS X
+九月 13, 2018 5:25:42 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            10.13.6
+九月 13, 2018 5:25:42 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          x86_64
+九月 13, 2018 5:25:42 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre
+九月 13, 2018 5:25:42 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.8.0_172-b11
+九月 13, 2018 5:25:42 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+九月 13, 2018 5:25:42 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /Users/ailikes/working/docker_workspace/docker_jenkins/jenkins_tomcat
+九月 13, 2018 5:25:42 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /Users/ailikes/working/docker_workspace/docker_jenkins/jenkins_tomcat
+九月 13, 2018 5:25:42 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/Users/ailikes/working/docker_workspace/docker_jenkins/jenkins_tomcat/conf/logging.properties
+九月 13, 2018 5:25:42 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+九月 13, 2018 5:25:42 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+九月 13, 2018 5:25:42 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dignore.endorsed.dirs=
+九月 13, 2018 5:25:42 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/Users/ailikes/working/docker_workspace/docker_jenkins/jenkins_tomcat
+九月 13, 2018 5:25:42 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/Users/ailikes/working/docker_workspace/docker_jenkins/jenkins_tomcat
+九月 13, 2018 5:25:42 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/Users/ailikes/working/docker_workspace/docker_jenkins/jenkins_tomcat/temp
+九月 13, 2018 5:25:42 下午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/ailikes/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+九月 13, 2018 5:25:42 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-nio-18080"]
+九月 13, 2018 5:25:42 下午 org.apache.tomcat.util.net.NioSelectorPool getSharedSelector
+信息: Using a shared selector for servlet write/read
+九月 13, 2018 5:25:42 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 834 ms
+九月 13, 2018 5:25:42 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+九月 13, 2018 5:25:42 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.88
+九月 13, 2018 5:25:42 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /Users/ailikes/working/docker_workspace/docker_jenkins/jenkins_tomcat/webapps/ROOT.war
+九月 13, 2018 5:25:45 下午 org.apache.catalina.deploy.WebXml setVersion
+警告: Unknown version string [3.1]. Default version will be used.
+九月 13, 2018 5:25:48 下午 org.apache.catalina.startup.ContextConfig validateSecurityRoles
+警告: Security role name ** used in an <auth-constraint> without being defined in a <security-role>
+九月 13, 2018 5:25:49 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+九月 13, 2018 5:25:52 下午 hudson.util.BootFailure publish
+严重: Failed to initialize Jenkins
+hudson.util.NoTempDir: java.io.IOException: No such file or directory
+	at hudson.WebAppMain.contextInitialized(WebAppMain.java:203)
+	at org.apache.catalina.core.StandardContext.listenerStart(StandardContext.java:5157)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5680)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:145)
+	at org.apache.catalina.core.ContainerBase.addChildInternal(ContainerBase.java:1017)
+	at org.apache.catalina.core.ContainerBase.addChild(ContainerBase.java:993)
+	at org.apache.catalina.core.StandardHost.addChild(StandardHost.java:652)
+	at org.apache.catalina.startup.HostConfig.deployWAR(HostConfig.java:1127)
+	at org.apache.catalina.startup.HostConfig$DeployWar.run(HostConfig.java:2021)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.IOException: No such file or directory
+	at java.io.UnixFileSystem.createFileExclusively(Native Method)
+	at java.io.File.createTempFile(File.java:2024)
+	at java.io.File.createTempFile(File.java:2070)
+	at hudson.WebAppMain.contextInitialized(WebAppMain.java:200)
+	... 13 more
+
+九月 13, 2018 5:25:53 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /Users/ailikes/working/docker_workspace/docker_jenkins/jenkins_tomcat/webapps/ROOT.war has finished in 10,086 ms
+九月 13, 2018 5:25:53 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-nio-18080"]
+九月 13, 2018 5:25:53 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 10179 ms
+九月 13, 2018 5:26:55 下午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+九月 13, 2018 5:26:55 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-nio-18080"]
+九月 13, 2018 5:26:55 下午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+九月 13, 2018 5:26:55 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@6d568381]) and a value of type [org.acegisecurity.context.SecurityContextImpl] (value [org.acegisecurity.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+九月 13, 2018 5:26:55 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-nio-18080"]
+九月 13, 2018 5:26:55 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-nio-18080"]
+九月 13, 2018 5:27:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.88
+九月 13, 2018 5:27:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          May 7 2018 11:12:57 UTC
+九月 13, 2018 5:27:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.88.0
+九月 13, 2018 5:27:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Mac OS X
+九月 13, 2018 5:27:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            10.13.6
+九月 13, 2018 5:27:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          x86_64
+九月 13, 2018 5:27:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre
+九月 13, 2018 5:27:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.8.0_172-b11
+九月 13, 2018 5:27:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+九月 13, 2018 5:27:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /Users/ailikes/working/docker_workspace/docker_jenkins/jenkins_tomcat
+九月 13, 2018 5:27:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /Users/ailikes/working/docker_workspace/docker_jenkins/jenkins_tomcat
+九月 13, 2018 5:27:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/Users/ailikes/working/docker_workspace/docker_jenkins/jenkins_tomcat/conf/logging.properties
+九月 13, 2018 5:27:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+九月 13, 2018 5:27:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+九月 13, 2018 5:27:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dignore.endorsed.dirs=
+九月 13, 2018 5:27:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/Users/ailikes/working/docker_workspace/docker_jenkins/jenkins_tomcat
+九月 13, 2018 5:27:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/Users/ailikes/working/docker_workspace/docker_jenkins/jenkins_tomcat
+九月 13, 2018 5:27:01 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/Users/ailikes/working/docker_workspace/docker_jenkins/jenkins_tomcat/temp
+九月 13, 2018 5:27:01 下午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/ailikes/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+九月 13, 2018 5:27:01 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-nio-18080"]
+九月 13, 2018 5:27:01 下午 org.apache.tomcat.util.net.NioSelectorPool getSharedSelector
+信息: Using a shared selector for servlet write/read
+九月 13, 2018 5:27:01 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 862 ms
+九月 13, 2018 5:27:01 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+九月 13, 2018 5:27:01 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.88
+九月 13, 2018 5:27:01 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deploying web application archive /Users/ailikes/working/docker_workspace/docker_jenkins/jenkins_tomcat/webapps/ROOT.war
+九月 13, 2018 5:27:01 下午 org.apache.catalina.deploy.WebXml setVersion
+警告: Unknown version string [3.1]. Default version will be used.
+九月 13, 2018 5:27:05 下午 org.apache.catalina.startup.ContextConfig validateSecurityRoles
+警告: Security role name ** used in an <auth-constraint> without being defined in a <security-role>
+九月 13, 2018 5:27:05 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+九月 13, 2018 5:27:09 下午 org.apache.catalina.startup.HostConfig deployWAR
+信息: Deployment of web application archive /Users/ailikes/working/docker_workspace/docker_jenkins/jenkins_tomcat/webapps/ROOT.war has finished in 8,203 ms
+九月 13, 2018 5:27:09 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-nio-18080"]
+九月 13, 2018 5:27:09 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 8295 ms
+九月 13, 2018 5:27:11 下午 jenkins.InitReactorRunner$1 onAttained
+信息: Started initialization
+九月 13, 2018 5:27:11 下午 jenkins.InitReactorRunner$1 onAttained
+信息: Listed all plugins
+九月 13, 2018 5:27:12 下午 jenkins.InitReactorRunner$1 onAttained
+信息: Prepared all plugins
+九月 13, 2018 5:27:12 下午 jenkins.InitReactorRunner$1 onAttained
+信息: Started all plugins
+九月 13, 2018 5:27:12 下午 jenkins.InitReactorRunner$1 onAttained
+信息: Augmented all extensions
+九月 13, 2018 5:27:13 下午 jenkins.InitReactorRunner$1 onAttained
+信息: Loaded all jobs
+九月 13, 2018 5:27:13 下午 hudson.model.AsyncPeriodicWork$1 run
+信息: Started Download metadata
+九月 13, 2018 5:27:14 下午 org.springframework.context.support.AbstractApplicationContext prepareRefresh
+信息: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@6ea4d831: display name [Root WebApplicationContext]; startup date [Thu Sep 13 17:27:14 CST 2018]; root of context hierarchy
+九月 13, 2018 5:27:14 下午 org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+信息: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@6ea4d831]: org.springframework.beans.factory.support.DefaultListableBeanFactory@78fdd5e2
+九月 13, 2018 5:27:14 下午 org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+信息: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@78fdd5e2: defining beans [authenticationManager]; root of factory hierarchy
+九月 13, 2018 5:27:14 下午 org.springframework.context.support.AbstractApplicationContext prepareRefresh
+信息: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@5b62ec93: display name [Root WebApplicationContext]; startup date [Thu Sep 13 17:27:14 CST 2018]; root of context hierarchy
+九月 13, 2018 5:27:14 下午 org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+信息: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@5b62ec93]: org.springframework.beans.factory.support.DefaultListableBeanFactory@42e2966a
+九月 13, 2018 5:27:14 下午 org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+信息: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@42e2966a: defining beans [filter,legacy]; root of factory hierarchy
+九月 13, 2018 5:27:15 下午 jenkins.install.SetupWizard init
+信息: 
+
+*************************************************************
+*************************************************************
+*************************************************************
+
+Jenkins initial setup is required. An admin user has been created and a password generated.
+Please use the following password to proceed to installation:
+
+92ff7b5ac1294f2b804e2e479aa7d794
+
+This may also be found at: /Users/ailikes/.jenkins/secrets/initialAdminPassword
+
+*************************************************************
+*************************************************************
+*************************************************************
+
+九月 13, 2018 5:27:51 下午 hudson.model.UpdateSite updateData
+信息: Obtained the latest update center data file for UpdateSource default
+九月 13, 2018 5:27:52 下午 hudson.model.DownloadService$Downloadable load
+信息: Obtained the updated data file for hudson.tasks.Maven.MavenInstaller
+九月 13, 2018 5:27:52 下午 hudson.model.AsyncPeriodicWork$1 run
+信息: Finished Download metadata. 39,095 ms
+九月 13, 2018 5:30:15 下午 hudson.model.UpdateSite updateData
+信息: Obtained the latest update center data file for UpdateSource default
+九月 13, 2018 5:30:15 下午 jenkins.InitReactorRunner$1 onAttained
+信息: Completed initialization
+九月 13, 2018 5:30:15 下午 hudson.UDPBroadcastThread run
+信息: Cannot listen to UDP port 33,848, skipping: java.net.SocketException: Can't assign requested address
+九月 13, 2018 5:30:15 下午 hudson.WebAppMain$3 run
+信息: Jenkins is fully up and running
+九月 13, 2018 5:36:18 下午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+九月 13, 2018 5:36:18 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-nio-18080"]
+九月 13, 2018 5:36:18 下午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+九月 13, 2018 5:36:18 下午 jenkins.model.Jenkins cleanUp
+信息: Stopping Jenkins
+九月 13, 2018 5:36:18 下午 jenkins.model.Jenkins$18 onAttained
+信息: Started termination
+九月 13, 2018 5:36:18 下午 jenkins.model.Jenkins$18 onAttained
+信息: Completed termination
+九月 13, 2018 5:36:18 下午 jenkins.model.Jenkins _cleanUpDisconnectComputers
+信息: Starting node disconnection
+九月 13, 2018 5:36:19 下午 jenkins.model.Jenkins _cleanUpShutdownPluginManager
+信息: Stopping plugin manager
+九月 13, 2018 5:36:19 下午 jenkins.model.Jenkins _cleanUpPersistQueue
+信息: Persisting build queue
+九月 13, 2018 5:36:19 下午 jenkins.model.Jenkins _cleanUpAwaitDisconnects
+信息: Waiting for node disconnection completion
+九月 13, 2018 5:36:19 下午 jenkins.model.Jenkins cleanUp
+信息: Jenkins stopped
+九月 13, 2018 5:36:19 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+严重: The web application [] appears to have started a thread named [Computer.threadPoolForRemoting [#3]] but has failed to stop it. This is very likely to create a memory leak.
+九月 13, 2018 5:36:19 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+严重: The web application [] appears to have started a thread named [Computer.threadPoolForRemoting [#4]] but has failed to stop it. This is very likely to create a memory leak.
+九月 13, 2018 5:36:19 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+严重: The web application [] appears to have started a thread named [Computer.threadPoolForRemoting [#5]] but has failed to stop it. This is very likely to create a memory leak.
+九月 13, 2018 5:36:19 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@21730b17]) and a value of type [org.acegisecurity.context.SecurityContextImpl] (value [org.acegisecurity.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+九月 13, 2018 5:36:19 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@21730b17]) and a value of type [org.acegisecurity.context.SecurityContextImpl] (value [org.acegisecurity.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+九月 13, 2018 5:36:19 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@21730b17]) and a value of type [org.acegisecurity.context.SecurityContextImpl] (value [org.acegisecurity.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+九月 13, 2018 5:36:19 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@21730b17]) and a value of type [org.acegisecurity.context.SecurityContextImpl] (value [org.acegisecurity.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+九月 13, 2018 5:36:19 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-nio-18080"]
+九月 13, 2018 5:36:19 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-nio-18080"]
+九月 13, 2018 5:36:39 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server version:        Apache Tomcat/7.0.88
+九月 13, 2018 5:36:39 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server built:          May 7 2018 11:12:57 UTC
+九月 13, 2018 5:36:39 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Server number:         7.0.88.0
+九月 13, 2018 5:36:39 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Name:               Mac OS X
+九月 13, 2018 5:36:39 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: OS Version:            10.13.6
+九月 13, 2018 5:36:39 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Architecture:          x86_64
+九月 13, 2018 5:36:39 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Java Home:             /Library/Java/JavaVirtualMachines/jdk1.8.0_172.jdk/Contents/Home/jre
+九月 13, 2018 5:36:39 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Version:           1.8.0_172-b11
+九月 13, 2018 5:36:39 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: JVM Vendor:            Oracle Corporation
+九月 13, 2018 5:36:39 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_BASE:         /Users/ailikes/working/docker_workspace/docker_jenkins/jenkins_tomcat
+九月 13, 2018 5:36:39 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: CATALINA_HOME:         /Users/ailikes/working/docker_workspace/docker_jenkins/jenkins_tomcat
+九月 13, 2018 5:36:39 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.config.file=/Users/ailikes/working/docker_workspace/docker_jenkins/jenkins_tomcat/conf/logging.properties
+九月 13, 2018 5:36:39 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+九月 13, 2018 5:36:39 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djdk.tls.ephemeralDHKeySize=2048
+九月 13, 2018 5:36:39 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dignore.endorsed.dirs=
+九月 13, 2018 5:36:39 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.base=/Users/ailikes/working/docker_workspace/docker_jenkins/jenkins_tomcat
+九月 13, 2018 5:36:39 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Dcatalina.home=/Users/ailikes/working/docker_workspace/docker_jenkins/jenkins_tomcat
+九月 13, 2018 5:36:39 下午 org.apache.catalina.startup.VersionLoggerListener log
+信息: Command line argument: -Djava.io.tmpdir=/Users/ailikes/working/docker_workspace/docker_jenkins/jenkins_tomcat/temp
+九月 13, 2018 5:36:39 下午 org.apache.catalina.core.AprLifecycleListener lifecycleEvent
+信息: The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: /Users/ailikes/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:.
+九月 13, 2018 5:36:39 下午 org.apache.coyote.AbstractProtocol init
+信息: Initializing ProtocolHandler ["http-nio-18080"]
+九月 13, 2018 5:36:39 下午 org.apache.tomcat.util.net.NioSelectorPool getSharedSelector
+信息: Using a shared selector for servlet write/read
+九月 13, 2018 5:36:39 下午 org.apache.catalina.startup.Catalina load
+信息: Initialization processed in 888 ms
+九月 13, 2018 5:36:39 下午 org.apache.catalina.core.StandardService startInternal
+信息: Starting service Catalina
+九月 13, 2018 5:36:39 下午 org.apache.catalina.core.StandardEngine startInternal
+信息: Starting Servlet Engine: Apache Tomcat/7.0.88
+九月 13, 2018 5:36:39 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deploying web application directory /Users/ailikes/working/docker_workspace/docker_jenkins/jenkins_tomcat/webapps/ROOT
+九月 13, 2018 5:36:39 下午 org.apache.catalina.deploy.WebXml setVersion
+警告: Unknown version string [3.1]. Default version will be used.
+九月 13, 2018 5:36:43 下午 org.apache.catalina.startup.ContextConfig validateSecurityRoles
+警告: Security role name ** used in an <auth-constraint> without being defined in a <security-role>
+九月 13, 2018 5:36:43 下午 org.apache.catalina.startup.TldConfig execute
+信息: At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+九月 13, 2018 5:36:47 下午 org.apache.catalina.startup.HostConfig deployDirectory
+信息: Deployment of web application directory /Users/ailikes/working/docker_workspace/docker_jenkins/jenkins_tomcat/webapps/ROOT has finished in 7,765 ms
+九月 13, 2018 5:36:47 下午 org.apache.coyote.AbstractProtocol start
+信息: Starting ProtocolHandler ["http-nio-18080"]
+九月 13, 2018 5:36:47 下午 org.apache.catalina.startup.Catalina start
+信息: Server startup in 7835 ms
+九月 13, 2018 5:36:48 下午 jenkins.InitReactorRunner$1 onAttained
+信息: Started initialization
+九月 13, 2018 5:36:49 下午 jenkins.InitReactorRunner$1 onAttained
+信息: Listed all plugins
+九月 13, 2018 5:36:50 下午 jenkins.InitReactorRunner$1 onAttained
+信息: Prepared all plugins
+九月 13, 2018 5:36:50 下午 jenkins.InitReactorRunner$1 onAttained
+信息: Started all plugins
+九月 13, 2018 5:36:50 下午 jenkins.InitReactorRunner$1 onAttained
+信息: Augmented all extensions
+九月 13, 2018 5:36:50 下午 jenkins.InitReactorRunner$1 onAttained
+信息: Loaded all jobs
+九月 13, 2018 5:36:51 下午 hudson.model.AsyncPeriodicWork$1 run
+信息: Started Download metadata
+九月 13, 2018 5:36:51 下午 hudson.model.AsyncPeriodicWork$1 run
+信息: Finished Download metadata. 3 ms
+九月 13, 2018 5:36:51 下午 org.springframework.context.support.AbstractApplicationContext prepareRefresh
+信息: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@2b104054: display name [Root WebApplicationContext]; startup date [Thu Sep 13 17:36:51 CST 2018]; root of context hierarchy
+九月 13, 2018 5:36:51 下午 org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+信息: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@2b104054]: org.springframework.beans.factory.support.DefaultListableBeanFactory@3a632e0d
+九月 13, 2018 5:36:51 下午 org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+信息: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@3a632e0d: defining beans [authenticationManager]; root of factory hierarchy
+九月 13, 2018 5:36:52 下午 org.springframework.context.support.AbstractApplicationContext prepareRefresh
+信息: Refreshing org.springframework.web.context.support.StaticWebApplicationContext@6dda469e: display name [Root WebApplicationContext]; startup date [Thu Sep 13 17:36:52 CST 2018]; root of context hierarchy
+九月 13, 2018 5:36:52 下午 org.springframework.context.support.AbstractApplicationContext obtainFreshBeanFactory
+信息: Bean factory for application context [org.springframework.web.context.support.StaticWebApplicationContext@6dda469e]: org.springframework.beans.factory.support.DefaultListableBeanFactory@18657bf4
+九月 13, 2018 5:36:52 下午 org.springframework.beans.factory.support.DefaultListableBeanFactory preInstantiateSingletons
+信息: Pre-instantiating singletons in org.springframework.beans.factory.support.DefaultListableBeanFactory@18657bf4: defining beans [filter,legacy]; root of factory hierarchy
+九月 13, 2018 5:36:52 下午 jenkins.InitReactorRunner$1 onAttained
+信息: Completed initialization
+九月 13, 2018 5:36:52 下午 hudson.UDPBroadcastThread run
+信息: Cannot listen to UDP port 33,848, skipping: java.net.SocketException: Can't assign requested address
+九月 13, 2018 5:36:52 下午 hudson.WebAppMain$3 run
+信息: Jenkins is fully up and running
+九月 13, 2018 5:38:54 下午 org.apache.catalina.core.StandardServer await
+信息: A valid shutdown command was received via the shutdown port. Stopping the Server instance.
+九月 13, 2018 5:38:54 下午 org.apache.coyote.AbstractProtocol pause
+信息: Pausing ProtocolHandler ["http-nio-18080"]
+九月 13, 2018 5:38:54 下午 org.apache.catalina.core.StandardService stopInternal
+信息: Stopping service Catalina
+九月 13, 2018 5:38:54 下午 jenkins.model.Jenkins cleanUp
+信息: Stopping Jenkins
+九月 13, 2018 5:38:54 下午 jenkins.model.Jenkins$18 onAttained
+信息: Started termination
+九月 13, 2018 5:38:54 下午 jenkins.model.Jenkins$18 onAttained
+信息: Completed termination
+九月 13, 2018 5:38:54 下午 jenkins.model.Jenkins _cleanUpDisconnectComputers
+信息: Starting node disconnection
+九月 13, 2018 5:38:55 下午 jenkins.model.Jenkins _cleanUpShutdownPluginManager
+信息: Stopping plugin manager
+九月 13, 2018 5:38:55 下午 jenkins.model.Jenkins _cleanUpPersistQueue
+信息: Persisting build queue
+九月 13, 2018 5:38:55 下午 jenkins.model.Jenkins _cleanUpAwaitDisconnects
+信息: Waiting for node disconnection completion
+九月 13, 2018 5:38:55 下午 jenkins.model.Jenkins cleanUp
+信息: Jenkins stopped
+九月 13, 2018 5:38:55 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+严重: The web application [] appears to have started a thread named [Computer.threadPoolForRemoting [#1]] but has failed to stop it. This is very likely to create a memory leak.
+九月 13, 2018 5:38:55 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+严重: The web application [] appears to have started a thread named [Computer.threadPoolForRemoting [#2]] but has failed to stop it. This is very likely to create a memory leak.
+九月 13, 2018 5:38:55 下午 org.apache.catalina.loader.WebappClassLoaderBase clearReferencesThreads
+严重: The web application [] appears to have started a thread named [Computer.threadPoolForRemoting [#3]] but has failed to stop it. This is very likely to create a memory leak.
+九月 13, 2018 5:38:55 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@d68ea68]) and a value of type [org.acegisecurity.context.SecurityContextImpl] (value [org.acegisecurity.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+九月 13, 2018 5:38:55 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@d68ea68]) and a value of type [org.acegisecurity.context.SecurityContextImpl] (value [org.acegisecurity.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+九月 13, 2018 5:38:55 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@d68ea68]) and a value of type [org.acegisecurity.context.SecurityContextImpl] (value [org.acegisecurity.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+九月 13, 2018 5:38:55 下午 org.apache.catalina.loader.WebappClassLoaderBase checkThreadLocalMapForLeaks
+严重: The web application [] created a ThreadLocal with key of type [java.lang.ThreadLocal] (value [java.lang.ThreadLocal@d68ea68]) and a value of type [org.acegisecurity.context.SecurityContextImpl] (value [org.acegisecurity.context.SecurityContextImpl@ffffffff: Null authentication]) but failed to remove it when the web application was stopped. Threads are going to be renewed over time to try and avoid a probable memory leak.
+九月 13, 2018 5:38:55 下午 org.apache.coyote.AbstractProtocol stop
+信息: Stopping ProtocolHandler ["http-nio-18080"]
+九月 13, 2018 5:38:55 下午 org.apache.coyote.AbstractProtocol destroy
+信息: Destroying ProtocolHandler ["http-nio-18080"]
